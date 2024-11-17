@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00DBDE;
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+  }
+  
+  .container {
+    background: #45f0dc;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(182, 21, 21, 0.7);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  button:hover, label.next-btn:hover, label.prev-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Step Indicators */
+  .steps {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+  }
+  
+  .step-indicator {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+    color: rgb(9, 9, 9);
+    text-align: center;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input:checked + .step-indicator {
+    background-color: #007BFF;
+  }
+  
+  /* Steps */
+  .step {
+    display: none;
+  }
+  
+  .step-input {
+    display: none;
+  }
+  
+  .step-input:checked ~ .step {
+    display: block;
+  }
+  
+  /* Navigation Buttons */
+  .next-btn, .prev-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+  }
+  
+  .prev-btn {
+    background-color: #6c757d;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+a{
+    font-size: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+}  

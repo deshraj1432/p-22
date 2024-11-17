@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Registration</h1>
+    <form>
+      <!-- Step Indicators -->
+      <div class="steps">
+        <label for="step-1" class="step-indicator">1</label>
+        <label for="step-2" class="step-indicator">2</label>
+        <label for="step-3" class="step-indicator">3</label>
+      </div>
+
+      <!-- Step Navigation -->
+      <input type="radio" id="step-1" name="steps" class="step-input" checked>
+      <input type="radio" id="step-2" name="steps" class="step-input">
+      <input type="radio" id="step-3" name="steps" class="step-input">
+
+      <!-- Step 1 -->
+      <div class="step">
+        <h2>Step 1: Personal Information</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <a href="step2.html">Next</a>
+
+      </div>
+
+    
+    
+    </form>
+  </div>
+</body>
+</html>
